@@ -3,7 +3,22 @@
     {% load bootstrap4 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
+
     <title>产品自动化测试平台</title>
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css" />
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+    <script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum- scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css" />
+    <meta name="robots" content="NONE,NOARCHIVE" />
+
 </head>
 
 <body role="document">
@@ -28,16 +43,33 @@
         </div>
     </nav>
 
-    <!-- 搜索栏-->
-    <div class="page-header" style="padding-top: 70px;">
-        <form class="navbar-form" method="get" action="/apissearch/">
-            {% csrf_token %}
-            <input type="search" name="apiname" placeholder="名称" required>
-            <button type="submit">搜索</button>
-        </form>
-    </div>
+
+
+
     <!—单一接口测试用例-->
-    <div class="row" style="padding-top: 50px;">
+    <div class="row" style="padding-top: 70px;">
+
+        <!-- 搜索栏-->
+        <div class="page-header" style="padding-left: 20px;">
+            <form class="navbar-form" method="get" action="/apissearch/">
+                {% csrf_token %}
+                <input type="search" name="apiname" placeholder="名称" required>
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+
+         <!-- 增加 api 单一接口测试用例-->
+        <div style="float:right;width:73%">
+            <select name="Apis" id="id_Apis">
+                <option value="" selected>----api 单一接口测试用例----</option>
+            </select>
+            <a class="related-widget-wrapper-link change-related" id="change_id_Apis" data-href- template="/admin/apitest/apis/__fk__/change/?_to_field=id&amp;_popup=1" title="更改选中的测试用例">
+                <img src="/static/admin/img/icon-changelink.svg" alt="修改" />
+            </a>
+            <a class="related-widget-wrapper-link add-related" id="add_id_Apis" href="/admin/apitest/apis/add/?_to_field=id&amp;_popup=1" title="增加另一个测试用例">
+                <img src="/static/admin/img/icon-addlink.svg" alt="增加" />增加
+            </a>
+        </div>
         <div class="col-md-11">
             <table class="table table-striped">
                 <thead>
@@ -51,6 +83,8 @@
                         <th> 预期结果</th>
                         <th>测试结果</th>
                         <th>时间</th>
+                        <th>编辑</th>
+                        <th>删除</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -65,6 +99,8 @@
                         <td>{{ apis.apiresult }}</td>
                         <td>{{ apis.apistatus }}</td>
                         <td>{{ apis.create_time }}</td>
+                        <td><a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Apis" href="../admin/apitest/apis/{{ apis.id	}}/change/?_to_field=id&_popup=1"><img src="/static/admin/img/icon-changelink.svg"/></a></td>
+                        <td><a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Apis" href="../admin/apitest/apis/{{ apis.id	}}/delete/?_to_field=id&_popup=1"><img src="/static/admin/img/icon-deletelink.svg"/></a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -72,7 +108,12 @@
         </div>
     </div>
 
-<span style="position:absolute; right:100px; bottom:30px;"> {# 把翻页功能固定显示在右下角#}
+    <!--统计和翻页功能-->
+    <span style="position:absolute; right:100px; bottom:100px;">	{# 把翻页功能固定显示在右下角#}
+        <div style="position:absolute;	right:100px; width:100px; ">
+        <tr><th>共:</th><td>{{ apiscounts }}</td><th>条记录</th></tr> {# 前端读取定义的变量#}
+    </div>
+
     <div class="container">
         <ul class="pagination" id="pager">
             {# 上一页链接开始#}

@@ -1,10 +1,30 @@
 <html lang="zh-CN">
 
-<head> {% load bootstrap4 %} {% bootstrap_css %} {% bootstrap_javascript %} <title>产品自动化测试平台</title>
+<head> {% load bootstrap4 %} {% bootstrap_css %} {% bootstrap_javascript %}
+    <title>产品自动化测试平台</title>
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css" />
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+    <script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum- scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css" />
+    <meta name="robots" content="NONE,NOARCHIVE" />
+
 </head>
 
 <body role="document">
-    <!-- 导航栏-->
+
+
+
+    <!—设置列表-->
+    <div class="row" style="padding-top: 70px;">
+        <!-- 导航栏-->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container"> <a class="navbar-brand" href="#">&nbsp;</a>
             <ul class="nav justify-content-center"> </ul>
@@ -14,19 +34,28 @@
             </ul>
         </div>
     </nav>
-    <!—设置列表-->
+
     <!-- 搜索栏 -->
-        <div class="page-header" style="padding-top: 70px;padding-left: 20px;">
+        <div class="page-header" style="padding-left: 20px;">
             <form class="navbar-form" method="get" action="/setsearch/">
                 {% csrf_token %}
                 <input type="search" name="setname" placeholder="名称" required>
                 <button type="submit">搜索</button>
             </form>
         </div>
+        <!-- 增加系统设置-->
+        <div style="float:right;width:73%">
+            <select name="Set" id="id_Set">
+                <option value="" selected>----设置名称----</option>
+            </select>
+            <a class="related-widget-wrapper-link change-related" id="change_id_Set" data-href- template="/admin/set/set/ fk /change/?_to_field=id&amp;_popup=1" title="更改选中的系统设置">
+                <img src="/static/admin/img/icon-changelink.svg" alt="修改" />
+            </a>
+            <a class="related-widget-wrapper-link add-related" id="add_id_Set" href="/admin/set/set/add/?_to_field=id&amp;_popup=1" title="增加另一个系统设置">
+                <img src="/static/admin/img/icon-addlink.svg" alt="增加" />增加
+            </a>
+        </div>
 
-
-
-    <div class="row" style="padding-top: 70px;">
         <div class="col-md-11">
             <table class="table table-striped">
                 <thead>
@@ -34,12 +63,17 @@
                         <th>ID</th>
                         <th>设置名称</th>
                         <th>设置的值</th>
+                        <th>编辑</th>
+                        <th>删除</th>
                     </tr>
                 </thead>
                 <tbody> {% for set in sets %} <tr>
                         <td>{{ set.id }}</td>
                         <td>{{ set.setname }}</td>
                         <td>{{ set.setvalue }}</td>
+                        <td><a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Set" href="../admin/set/set/{{ set.id}}/change/?_to_field=id&_popup=1"><img src="/static/admin/img/icon-changelink.svg"/></a></td>
+                        <td><a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Set" href="../admin/set/set/{{ set.id	}}/delete/?_to_field=id&_popup=1"><img src="/static/admin/img/icon- deletelink.svg"/></a></td>
+
                     </tr> {% endfor %} </tbody>
             </table>
         </div>

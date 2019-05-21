@@ -11,6 +11,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def bug_manage(request):
 	username = request.session.get('user', '')
 	bug_list = Bug.objects.all()
+	bug_count = Bug.objects.all().count()
 	paginator = Paginator(bug_list,8)  # 生成 paginator 对象，设置每页显示 8 条记录
 	page = request.GET.get('page',1)		#获取当前的页码数，默认为第 1 页
 	currentPage=int(page)	#把获取的当前页码数转换成整数类型
@@ -20,7 +21,7 @@ def bug_manage(request):
 		bug_list = paginator.page(1)  # 如果输入的页数不是整数，则显示第 1 页内容
 	except EmptyPage:
 		bug_list = paginator.page(paginator.num_pages)  # 如果输入的页数不在系统的页数中， # 则显示最后一页的内容
-	return render(request, "bug_manage.html", {"user": username,"bugs": bug_list})
+	return render(request, "bug_manage.html", {"user": username,"bugs": bug_list,"bugcounts": bug_count})
 
 
 # 搜索功能

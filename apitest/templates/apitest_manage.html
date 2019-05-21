@@ -4,6 +4,21 @@
     {% bootstrap_css %}
     {% bootstrap_javascript %}
     <title>产品自动化测试平台</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css" />
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+    <script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum- scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css" />
+    <meta name="robots" content="NONE,NOARCHIVE" />
+
 </head>
 
 <body role="document">
@@ -39,6 +54,18 @@
                 <button type="submit">搜索</button>
             </form>
         </div>
+        <!-- 增加 api 流程测试用例-->
+        <div style="float:right;width:73%">
+            <select name="Apitest" id="id_Apitest">
+                <option value="" selected>----api 流程测试用例----</option>
+            </select>
+            <a class="related-widget-wrapper-link change-related" id="change_id_Apitest" data-href- template="/admin/apitest/apitest/fk /change/?_to_field=id&amp;_popup=1" title="更改选中的测试用例">
+                <img src="/static/admin/img/icon-changelink.svg" alt="修改" />
+            </a>
+            <a class="related-widget-wrapper-link add-related" id="add_id_Apitest" href="/admin/apitest/apitest/add/?_to_field=id&amp;_popup=1" title="增加另一个测试用例">
+                <img src="/static/admin/img/icon-addlink.svg" alt="增加" />增加
+            </a>
+        </div>
         <div class="col-md-11">
             <table class="table table-striped">
                 <thead>
@@ -47,7 +74,8 @@
                         <th>业务接口流程名称</th>
                         <th>执行人</th>
                         <th>结果</th>
-                        <th>接口列表</th>
+                        <th>编辑</th>
+                        <th>删除</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,6 +85,9 @@
                         <td>{{ apitest.apitestname }}</td>
                         <td>{{ apitest.apitester }}</td>
                         <td>{{ apitest.apitestresult }}</td>
+                        <td><a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Apitest" href="../admin/apitest/apitest/{{ apitest.id	}}/change/?_to_field=id&_popup=1"><img src="/static/admin/img/icon-changelink.svg"/></a></td>
+                        <td><a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Apitest" href="../admin/apitest/apitest/{{ apitest.id	}}/delete/?_to_field=id&_popup=1"><img src="/static/admin/img/icon-deletelink.svg"/></a></td>
+
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -66,6 +97,10 @@
 
     <!--·   分页功能-->
     <span style="position:absolute; right:100px; bottom:30px;">	{# 把翻页功能固定显示在右下角#}
+         <div style="position:absolute;	right:100px; width:100px; ">
+             <tr><th>共:</th><td>{{ apitestcounts }}</td><th>条记录</th></tr> {# 前端读取定义的变量#}
+        </div>
+
         <div class="container">
             <ul class="pagination" id="pager">
                 {# 上一页链接开始#}

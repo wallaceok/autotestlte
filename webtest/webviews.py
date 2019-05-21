@@ -14,6 +14,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def webcase_manage(request):
     webcase_list = Webcase.objects.all()
     username = request.session.get('user', '')  # 读取浏览器登录Session
+    webcase_count = Webcase.objects.all().count()
     paginator = Paginator(webcase_list,8)   #生成paginator对象，设置每页8条记录
     page = request.GET.get('page',1)  #获取当前页的页码数，默认为第一页
     currentPage = int(page)
@@ -23,7 +24,7 @@ def webcase_manage(request):
         webcase_list = paginator.page(1)  #如果输入的页数不是整数，则显示第1页的内容
     except EmptyPage:
         webcase_list = paginator.page(paginator.num_pages) #如果输入的页数不在系统的页数中，则显示最后一页
-    return render(request, "webcase_manage.html", {"user": username, "webcases": webcase_list})
+    return render(request, "webcase_manage.html", {"user": username, "webcases": webcase_list,"webcasecounts":webcase_count})
 
 # Web用例测试步骤
 @login_required
