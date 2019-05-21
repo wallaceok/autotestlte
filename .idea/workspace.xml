@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ca12927-85bf-463f-9eec-908f7aeff5e1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/apitest/templates/left.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apptest/appauto_testcase3.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apptest/appium_testcase1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apptest/apptest_report.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apptest/sele.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webtest/webauto_testcase3.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/autotest.iml" afterPath="$PROJECT_DIR$/.idea/autotest.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/apitest/config.py" afterPath="$PROJECT_DIR$/apitest/mod_config.py" />
-      <change beforePath="$PROJECT_DIR$/apitest/templates/apis_manage.html" afterPath="$PROJECT_DIR$/apitest/templates/apis_manage.html" />
-      <change beforePath="$PROJECT_DIR$/apitest/templates/apistep_manage.html" afterPath="$PROJECT_DIR$/apitest/templates/apistep_manage.html" />
-      <change beforePath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" afterPath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" />
-      <change beforePath="$PROJECT_DIR$/apitest/templates/bug_manage.html" afterPath="$PROJECT_DIR$/bug/templates/bug_manage.html" />
-      <change beforePath="$PROJECT_DIR$/apitest/templates/home.html" afterPath="$PROJECT_DIR$/apitest/templates/home.html" />
-      <change beforePath="$PROJECT_DIR$/apitest/templates/product_manage.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/apitest/views.py" afterPath="$PROJECT_DIR$/apitest/views.py" />
-      <change beforePath="$PROJECT_DIR$/apptest/appviews.py" afterPath="$PROJECT_DIR$/apptest/appviews.py" />
-      <change beforePath="$PROJECT_DIR$/apptest/templates/appcase_manage.html" afterPath="$PROJECT_DIR$/apptest/templates/appcase_manage.html" />
-      <change beforePath="$PROJECT_DIR$/apptest/templates/appcasestep_manage.html" afterPath="$PROJECT_DIR$/apptest/templates/appcasestep_manage.html" />
-      <change beforePath="$PROJECT_DIR$/autotest/urls.py" afterPath="$PROJECT_DIR$/autotest/urls.py" />
-      <change beforePath="$PROJECT_DIR$/bug/bugviews.py" afterPath="$PROJECT_DIR$/bug/bugviews.py" />
-      <change beforePath="$PROJECT_DIR$/product/proviews.py" afterPath="$PROJECT_DIR$/product/proviews.py" />
-      <change beforePath="$PROJECT_DIR$/product/templates/product_manage.html" afterPath="$PROJECT_DIR$/product/templates/product_manage.html" />
-      <change beforePath="$PROJECT_DIR$/set/setviews.py" afterPath="$PROJECT_DIR$/set/setviews.py" />
-      <change beforePath="$PROJECT_DIR$/set/templates/set_manage.html" afterPath="$PROJECT_DIR$/set/templates/set_manage.html" />
-      <change beforePath="$PROJECT_DIR$/set/templates/set_user.html" afterPath="$PROJECT_DIR$/set/templates/set_user.html" />
-      <change beforePath="$PROJECT_DIR$/webtest/templates/webcase_manage.html" afterPath="$PROJECT_DIR$/webtest/templates/webcase_manage.html" />
-      <change beforePath="$PROJECT_DIR$/webtest/templates/webcasestep_manage.html" afterPath="$PROJECT_DIR$/webtest/templates/webcasestep_manage.html" />
-      <change beforePath="$PROJECT_DIR$/webtest/webviews.py" afterPath="$PROJECT_DIR$/webtest/webviews.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/apitest/templates/apistep_manage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-350">
-              <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+              <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -123,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/webtest/templates/webcase_manage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="99">
-              <caret line="57" column="82" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="82" />
+              <caret line="57" column="82" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -135,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/set/templates/set_user.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+              <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -145,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/set/templates/set_manage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="131">
-              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+              <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -169,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/bug/templates/bug_manage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="74">
-              <caret line="58" column="81" lean-forward="true" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
+              <caret line="58" column="81" lean-forward="false" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -545,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558335365729</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加api报告">
+      <created>1558426366270</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558426366270</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -849,7 +827,7 @@
         <state relative-caret-position="417">
           <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
           <folding>
-            <element signature="e#23#32#0" expanded="true" />
+            <element signature="e#23#32#0" expanded="false" />
             <marker date="1558404856534" expanded="true" signature="532:712" ph="SELECT id, w... webtest_webcasestep" />
             <marker date="1558404856534" expanded="true" signature="1220:1399" ph="SELECT id, w... webtest_webcasestep" />
           </folding>
@@ -877,9 +855,9 @@
         <state relative-caret-position="167">
           <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="27" selection-end-column="13" />
           <folding>
-            <element signature="e#469#475#1#HTML" expanded="true" />
-            <element signature="e#524#530#1#HTML" expanded="true" />
-            <element signature="e#579#585#1#HTML" expanded="true" />
+            <element signature="e#469#475#1#HTML" expanded="false" />
+            <element signature="e#524#530#1#HTML" expanded="false" />
+            <element signature="e#579#585#1#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -889,7 +867,7 @@
         <state relative-caret-position="542">
           <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -899,7 +877,7 @@
         <state relative-caret-position="364">
           <caret line="133" column="8" lean-forward="true" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="8" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="false" />
             <marker date="1558423706518" expanded="true" signature="3550:3615" ph="SELECT count... apitest_apis" />
             <marker date="1558423706518" expanded="true" signature="3716:3781" ph="SELECT count... apitest_apis" />
           </folding>
@@ -911,7 +889,7 @@
         <state relative-caret-position="100">
           <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="12" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -921,7 +899,7 @@
         <state relative-caret-position="450">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -947,7 +925,7 @@
         <state relative-caret-position="424">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -957,7 +935,7 @@
         <state relative-caret-position="474">
           <caret line="88" column="11" lean-forward="false" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -965,7 +943,7 @@
     <entry file="file://$PROJECT_DIR$/webtest/templates/webcase_manage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
-          <caret line="57" column="82" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="82" />
+          <caret line="57" column="82" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -975,7 +953,7 @@
     <entry file="file://$PROJECT_DIR$/set/templates/set_user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -983,7 +961,7 @@
     <entry file="file://$PROJECT_DIR$/set/templates/set_manage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1003,7 +981,7 @@
     <entry file="file://$PROJECT_DIR$/bug/templates/bug_manage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
-          <caret line="58" column="81" lean-forward="true" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
+          <caret line="58" column="81" lean-forward="false" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
           <folding>
             <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1033,7 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/apitest/templates/apistep_manage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-350">
-          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+          <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
           <folding />
         </state>
       </provider>
