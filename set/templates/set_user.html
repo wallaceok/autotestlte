@@ -27,6 +27,15 @@
             </ul>
         </div>
     </nav>
+
+     <!-- 搜索栏-->
+    <div class="page-header" style="padding-top: 70px;">
+        <form class="navbar-form" method="get" action="/usersearch/">
+            {% csrf_token %}
+            <input type="search" name="username" placeholder="用户名" required>
+            <button type="submit">搜索</button>
+        </form>
+    </div>
     <div class="row" style="padding-top: 55px;">
         <div class="col-md-11">
             <!-- 用户管理-->

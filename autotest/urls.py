@@ -39,4 +39,18 @@ urlpatterns = [
     path('webcase_manage/', webviews.webcase_manage),
     path('webcasestep_manage/', webviews.webcasestep_manage),
     path ('test_report/', views.test_report),
+    path('apptest_report/', appviews.apptest_report),
+    path('left/', views.left),
+    path ('apisearch/', views.apisearch),
+    path ('setsearch/', setviews.setsearch),
+    path ('productsearch/', proviews.productsearch),
+    path ('apissearch/', views.apissearch),
+    path('apistepsearch/', views.apistepsearch),
+    path ('bugsearch/', bugviews.bugsearch),
+    path('appsearch/', appviews.appsearch),
+    path('appstepsearch/', appviews.appstepsearch),
+    path('websearch/', webviews.websearch),
+    path('webstepsearch/', webviews.webstepsearch),
+    path ('usersearch/', setviews.usersearch),
+
 ]

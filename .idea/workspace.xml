@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ca12927-85bf-463f-9eec-908f7aeff5e1" name="Default" comment="添加api报告">
-      <change beforePath="" afterPath="$PROJECT_DIR$/apitest/templates/report.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/product/templates/product_manage.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/settings.conf" />
+    <list default="true" id="1ca12927-85bf-463f-9eec-908f7aeff5e1" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/apitest/templates/left.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/apptest/appauto_testcase3.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/apptest/appium_testcase1.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/apptest/apptest_report.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/apptest/sele.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webtest/webauto_testcase3.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/autotest.iml" afterPath="$PROJECT_DIR$/.idea/autotest.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/apitest/config.py" afterPath="$PROJECT_DIR$/apitest/mod_config.py" />
+      <change beforePath="$PROJECT_DIR$/apitest/templates/apis_manage.html" afterPath="$PROJECT_DIR$/apitest/templates/apis_manage.html" />
       <change beforePath="$PROJECT_DIR$/apitest/templates/apistep_manage.html" afterPath="$PROJECT_DIR$/apitest/templates/apistep_manage.html" />
       <change beforePath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" afterPath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" />
+      <change beforePath="$PROJECT_DIR$/apitest/templates/bug_manage.html" afterPath="$PROJECT_DIR$/bug/templates/bug_manage.html" />
+      <change beforePath="$PROJECT_DIR$/apitest/templates/home.html" afterPath="$PROJECT_DIR$/apitest/templates/home.html" />
+      <change beforePath="$PROJECT_DIR$/apitest/templates/product_manage.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/apitest/views.py" afterPath="$PROJECT_DIR$/apitest/views.py" />
+      <change beforePath="$PROJECT_DIR$/apptest/appviews.py" afterPath="$PROJECT_DIR$/apptest/appviews.py" />
       <change beforePath="$PROJECT_DIR$/apptest/templates/appcase_manage.html" afterPath="$PROJECT_DIR$/apptest/templates/appcase_manage.html" />
+      <change beforePath="$PROJECT_DIR$/apptest/templates/appcasestep_manage.html" afterPath="$PROJECT_DIR$/apptest/templates/appcasestep_manage.html" />
       <change beforePath="$PROJECT_DIR$/autotest/urls.py" afterPath="$PROJECT_DIR$/autotest/urls.py" />
+      <change beforePath="$PROJECT_DIR$/bug/bugviews.py" afterPath="$PROJECT_DIR$/bug/bugviews.py" />
+      <change beforePath="$PROJECT_DIR$/product/proviews.py" afterPath="$PROJECT_DIR$/product/proviews.py" />
+      <change beforePath="$PROJECT_DIR$/product/templates/product_manage.html" afterPath="$PROJECT_DIR$/product/templates/product_manage.html" />
+      <change beforePath="$PROJECT_DIR$/set/setviews.py" afterPath="$PROJECT_DIR$/set/setviews.py" />
+      <change beforePath="$PROJECT_DIR$/set/templates/set_manage.html" afterPath="$PROJECT_DIR$/set/templates/set_manage.html" />
+      <change beforePath="$PROJECT_DIR$/set/templates/set_user.html" afterPath="$PROJECT_DIR$/set/templates/set_user.html" />
       <change beforePath="$PROJECT_DIR$/webtest/templates/webcase_manage.html" afterPath="$PROJECT_DIR$/webtest/templates/webcase_manage.html" />
       <change beforePath="$PROJECT_DIR$/webtest/templates/webcasestep_manage.html" afterPath="$PROJECT_DIR$/webtest/templates/webcasestep_manage.html" />
+      <change beforePath="$PROJECT_DIR$/webtest/webviews.py" afterPath="$PROJECT_DIR$/webtest/webviews.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,25 +42,44 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/autotest$apiauto_testcase3.coverage" NAME="apiauto_testcase3 Coverage Results" MODIFIED="1558331250508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apitest" />
+    <SUITE FILE_PATH="coverage/autotest$sele.coverage" NAME="sele Coverage Results" MODIFIED="1558344811404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apptest" />
+    <SUITE FILE_PATH="coverage/autotest$appium_testcase1.coverage" NAME="appium_testcase1 Coverage Results" MODIFIED="1558401858444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apptest" />
     <SUITE FILE_PATH="coverage/autotest$config.coverage" NAME="config Coverage Results" MODIFIED="1558324090954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apitest" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="report.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/templates/report.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="appcase_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptest/templates/appcase_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="449">
+              <caret line="90" column="11" lean-forward="false" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apitest_manage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/templates/apitest_manage.html">
+      <file leaf-file-name="apis_manage.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apitest/templates/apis_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -50,100 +88,90 @@
       <file leaf-file-name="apistep_manage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apitest/templates/apistep_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="-350">
+              <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiauto_testcase3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/apiauto_testcase3.py">
+      <file leaf-file-name="apitest_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apitest/templates/apitest_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="573">
+              <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
               <folding>
-                <element signature="e#23#53#0" expanded="true" />
-                <marker date="1558334539887" expanded="true" signature="407:535" ph="SELECT id,`a... apitest_apistep" />
-                <marker date="1558334539887" expanded="true" signature="1042:1169" ph="SELECT id,`a... apitest_apistep" />
-                <marker date="1558334539887" expanded="true" signature="1042:1170" ph="SELECT id,`a... apitest_apistep" />
-                <marker date="1558334539887" expanded="true" signature="8404:8495" ph="UPDATE apitest_apistep... " />
-                <marker date="1558334539887" expanded="true" signature="8946:9064" ph="UPDATE apitest_apitest... " />
-                <marker date="1558334539887" expanded="true" signature="9898:9921" ph="INSERT INTO `bug_bug`... " />
-                <marker date="1558334539887" expanded="true" signature="9898:10073" ph="INSERT INTO `bug_bug`... " />
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTMLTestRunner.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTMLTestRunner.py">
+      <file leaf-file-name="appcasestep_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptest/templates/appcasestep_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7952">
-              <caret line="824" column="0" lean-forward="true" selection-start-line="824" selection-start-column="0" selection-end-line="824" selection-end-column="0" />
+            <state relative-caret-position="535">
+              <caret line="96" column="11" lean-forward="false" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
               <folding>
-                <element signature="e#3215#3230#0" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiauto_testcase1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/apiauto_testcase1.py">
+      <file leaf-file-name="webcase_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webtest/templates/webcase_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4587">
-              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="99">
+              <caret line="57" column="82" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="82" />
               <folding>
-                <element signature="e#23#53#0" expanded="true" />
-                <marker date="1558333191311" expanded="true" signature="268:396" ph="SELECT id,`a... apitest_apistep" />
-                <marker date="1558333191311" expanded="true" signature="7239:7330" ph="UPDATE apitest_apistep... " />
-                <marker date="1558333191311" expanded="true" signature="8156:8331" ph="INSERT INTO `bug_bug`... " />
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.conf">
+      <file leaf-file-name="set_user.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/set/templates/set_user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="5" />
+            <state relative-caret-position="149">
+              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/config.py">
+      <file leaf-file-name="set_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/set/templates/set_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="131">
+              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding>
-                <element signature="e#37#56#0" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/settings.conf">
+      <file leaf-file-name="product_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product/templates/product_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="523">
+              <caret line="74" column="11" lean-forward="false" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apitest/views.py">
+      <file leaf-file-name="bug_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bug/templates/bug_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+            <state relative-caret-position="74">
+              <caret line="58" column="81" lean-forward="true" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1558316595438" expanded="true" signature="2176:2241" ph="SELECT count... apitest_apis" />
-                <marker date="1558316595438" expanded="true" signature="2342:2407" ph="SELECT count... apitest_apis" />
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,20 +187,19 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>apis_manage</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/autotest/__init__.py" />
-        <option value="$PROJECT_DIR$/autotest/views.py" />
-        <option value="$PROJECT_DIR$/apitest/templates/home.html" />
-        <option value="$PROJECT_DIR$/apitest/templates/login.html" />
         <option value="$PROJECT_DIR$/product/models.py" />
         <option value="$PROJECT_DIR$/apitest/templates/product_manage. html.html" />
-        <option value="$PROJECT_DIR$/product/proviews.py" />
-        <option value="$PROJECT_DIR$/apitest/templates/apis_manage.html" />
         <option value="$PROJECT_DIR$/apitest/models.py" />
         <option value="$PROJECT_DIR$/apitest/admin.py" />
         <option value="$PROJECT_DIR$/bug/models.py" />
@@ -182,33 +209,46 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/set/models.py" />
         <option value="$PROJECT_DIR$/set/admin.py" />
-        <option value="$PROJECT_DIR$/set/templates/set_manage.html" />
-        <option value="$PROJECT_DIR$/set/setviews.py" />
-        <option value="$PROJECT_DIR$/set/templates/set_user.html" />
         <option value="$PROJECT_DIR$/apptest/templates/appcasestep_ manage.html" />
         <option value="$PROJECT_DIR$/apptest/views.py" />
         <option value="$PROJECT_DIR$/apptest/models.py" />
-        <option value="$PROJECT_DIR$/apptest/appviews.py" />
         <option value="$PROJECT_DIR$/apptest/admin.py" />
-        <option value="$PROJECT_DIR$/apptest/templates/appcasestep_manage.html" />
         <option value="$PROJECT_DIR$/webtest/models.py" />
         <option value="$PROJECT_DIR$/product/admin.py" />
         <option value="$PROJECT_DIR$/webtest/admin.py" />
         <option value="$PROJECT_DIR$/autotest/settings.py" />
         <option value="$PROJECT_DIR$/webtest/views.py" />
-        <option value="$PROJECT_DIR$/webtest/templates/webcasestep_manage.html" />
-        <option value="$PROJECT_DIR$/webtest/templates/webcase_manage.html" />
-        <option value="$PROJECT_DIR$/apptest/templates/appcase_manage.html" />
         <option value="$PROJECT_DIR$/apitest/templates/report.html" />
-        <option value="$PROJECT_DIR$/apitest/templates/apitest_manage.html" />
-        <option value="$PROJECT_DIR$/apitest/templates/apistep_manage.html" />
-        <option value="$PROJECT_DIR$/autotest/urls.py" />
-        <option value="$PROJECT_DIR$/apitest/views.py" />
         <option value="$PROJECT_DIR$/settings.conf" />
         <option value="$PROJECT_DIR$/apitest/config.py" />
         <option value="$PROJECT_DIR$/apitest/apiauto_testcase1.py" />
         <option value="$PROJECT_DIR$/apitest/apiauto_testcase3.py" />
         <option value="$PROJECT_DIR$/HTMLTestRunner.py" />
+        <option value="$PROJECT_DIR$/apptest/appauto_testcase3.py" />
+        <option value="$PROJECT_DIR$/apptest/sele.py" />
+        <option value="$PROJECT_DIR$/apptest/appium_testcase1.py" />
+        <option value="$PROJECT_DIR$/apptest/app_report.py" />
+        <option value="$PROJECT_DIR$/webtest/webauto_testcase3.py" />
+        <option value="$PROJECT_DIR$/apitest/templates/home.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/left.html" />
+        <option value="$PROJECT_DIR$/product/proviews.py" />
+        <option value="$PROJECT_DIR$/autotest/urls.py" />
+        <option value="$PROJECT_DIR$/apitest/views.py" />
+        <option value="$PROJECT_DIR$/apitest/templates/apistep_manage.html" />
+        <option value="$PROJECT_DIR$/set/setviews.py" />
+        <option value="$PROJECT_DIR$/set/templates/set_user.html" />
+        <option value="$PROJECT_DIR$/bug/bugviews.py" />
+        <option value="$PROJECT_DIR$/apptest/appviews.py" />
+        <option value="$PROJECT_DIR$/webtest/webviews.py" />
+        <option value="$PROJECT_DIR$/webtest/templates/webcasestep_manage.html" />
+        <option value="$PROJECT_DIR$/webtest/templates/webcase_manage.html" />
+        <option value="$PROJECT_DIR$/set/templates/set_manage.html" />
+        <option value="$PROJECT_DIR$/product/templates/product_manage.html" />
+        <option value="$PROJECT_DIR$/bug/templates/bug_manage.html" />
+        <option value="$PROJECT_DIR$/apptest/templates/appcasestep_manage.html" />
+        <option value="$PROJECT_DIR$/apptest/templates/appcase_manage.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/apitest_manage.html" />
+        <option value="$PROJECT_DIR$/apitest/templates/apis_manage.html" />
       </list>
     </option>
   </component>
@@ -240,7 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,29 +295,43 @@
             <path>
               <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autotest" type="462c0819:PsiDirectoryNode" />
+              <item name="apitest" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autotest" type="462c0819:PsiDirectoryNode" />
+              <item name="webtest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autotest" type="462c0819:PsiDirectoryNode" />
+              <item name="webtest" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProgramData\Anaconda3\envs\py36\Scripts\autotest\bug\templates" />
       <recent name="D:\ProgramData\Anaconda3\envs\py36\Scripts\autotest\apitest" />
       <recent name="D:\ProgramData\Anaconda3\envs\py36\Scripts\autotest" />
       <recent name="D:\ProgramData\Anaconda3\envs\py36\Scripts\autotest\product\templates" />
       <recent name="D:\ProgramData\Anaconda3\envs\py36\Scripts\autotest\product" />
-      <recent name="D:\ProgramData\Anaconda3\envs\py36\Scripts\autotest\autotest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -293,7 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.apiauto_testcase3">
+  <component name="RunManager" selected="Python.appium_testcase1">
     <configuration name="apiauto_testcase3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -313,6 +366,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="appium_testcase1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apptest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="autotest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apptest/appium_testcase1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,7 +398,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="autotest" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apitest/config.py" />
+      <option name="SCRIPT_NAME" value="D:\ProgramData\Anaconda3\envs\py36\Scripts\autotest\apitest\mod_config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="sele" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apptest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="autotest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apptest/sele.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,15 +445,19 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Django server.autotest" />
       <item index="1" class="java.lang.String" itemvalue="Python.config" />
       <item index="2" class="java.lang.String" itemvalue="Python.apiauto_testcase3" />
+      <item index="3" class="java.lang.String" itemvalue="Python.sele" />
+      <item index="4" class="java.lang.String" itemvalue="Python.appium_testcase1" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.apiauto_testcase3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.config" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.appium_testcase1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sele" />
+        <item index="2" class="java.lang.String" itemvalue="Python.apiauto_testcase3" />
+        <item index="3" class="java.lang.String" itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -443,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558335215805</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="添加api报告">
+      <created>1558335365729</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558335365729</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -459,19 +561,19 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5021322" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24021739" sideWeight="0.5042644" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31304348" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31304348" sideWeight="0.4914712" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24021739" sideWeight="0.49573562" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.4936034" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.4936034" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -498,7 +600,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apitest/config.py</url>
+          <url>file://$PROJECT_DIR$/apitest/mod_config.py</url>
           <line>8</line>
         </line-breakpoint>
       </breakpoints>
@@ -507,83 +609,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apitest/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autotest/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autotest/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autotest/views.py" />
-    <entry file="file://$PROJECT_DIR$/apitest/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding>
-            <element signature="e#377#383#0#HTML" expanded="false" />
-            <element signature="e#383#389#0#HTML" expanded="false" />
-            <element signature="e#470#476#0#HTML" expanded="false" />
-            <element signature="e#476#482#0#HTML" expanded="false" />
-            <element signature="e#484#490#0#HTML" expanded="false" />
-            <element signature="e#490#496#0#HTML" expanded="false" />
-            <element signature="e#591#597#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/apis_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product/proviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -598,20 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bug/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bug/bugviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="82" lean-forward="true" selection-start-line="8" selection-start-column="82" selection-end-line="8" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -636,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="956">
           <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,40 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/set/templates/set_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/set/setviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/set/templates/set_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-          <folding>
-            <element signature="e#1389#1395#1#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apptest/appviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -738,108 +717,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autotest/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtest/webviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="22" column="107" lean-forward="false" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/templates/home.html" />
-    <entry file="file://$PROJECT_DIR$/product/templates/product_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apptest/templates/appcase_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apptest/templates/appcasestep_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtest/templates/webcase_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="62" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="62" />
-          <folding>
-            <element signature="e#309#315#1#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtest/templates/webcasestep_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="e#307#313#1#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autotest/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="22" />
-          <folding>
-            <element signature="e#632#664#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1558316595438" expanded="true" signature="2176:2241" ph="SELECT count... apitest_apis" />
-            <marker date="1558316595438" expanded="true" signature="2342:2407" ph="SELECT count... apitest_apis" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apitest/templates/report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
+        <state relative-caret-position="2050">
           <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/apitest_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/templates/apistep_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="23" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,25 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#37#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -873,29 +736,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="1322" column="0" lean-forward="false" selection-start-line="1322" selection-start-column="0" selection-end-line="1322" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20475">
+          <caret line="824" column="0" lean-forward="false" selection-start-line="824" selection-start-column="0" selection-end-line="824" selection-end-column="0" />
+          <folding>
+            <element signature="e#3215#3230#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bug/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apitest/apiauto_testcase1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4587">
+        <state relative-caret-position="25">
           <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptest/sele.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptest/appauto_testcase3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
           <folding>
-            <element signature="e#23#53#0" expanded="true" />
-            <marker date="1558333191311" expanded="true" signature="268:396" ph="SELECT id,`a... apitest_apistep" />
-            <marker date="1558333191311" expanded="true" signature="7239:7330" ph="UPDATE apitest_apistep... " />
-            <marker date="1558333191311" expanded="true" signature="8156:8331" ph="INSERT INTO `bug_bug`... " />
+            <element signature="e#23#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apitest/apiauto_testcase3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="173">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#23#53#0" expanded="true" />
             <marker date="1558334539887" expanded="true" signature="407:535" ph="SELECT id,`a... apitest_apistep" />
             <marker date="1558334539887" expanded="true" signature="1042:1169" ph="SELECT id,`a... apitest_apistep" />
             <marker date="1558334539887" expanded="true" signature="1042:1170" ph="SELECT id,`a... apitest_apistep" />
@@ -907,13 +798,261 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTMLTestRunner.py">
+    <entry file="file://$PROJECT_DIR$/apitest/mod_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7952">
-          <caret line="824" column="0" lean-forward="true" selection-start-line="824" selection-start-column="0" selection-end-line="824" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptest/appium_testcase1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="46" column="70" lean-forward="false" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="70" />
           <folding>
-            <element signature="e#3215#3230#0" expanded="true" />
+            <element signature="e#14#42#0" expanded="false" />
+            <marker date="1558402166095" expanded="true" signature="435:608" ph="SELECT id,`a... apptest_appcasestep" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptest/apptest_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="114" column="17" lean-forward="true" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+          <folding>
+            <element signature="e#14#42#0" expanded="false" />
+            <marker date="1558403892983" expanded="true" signature="576:680" ph="SELECT id,ap... apptest_appcasestep" />
+            <marker date="1558403892983" expanded="true" signature="576:686" ph="SELECT id,ap... apptest_appcasestep" />
+            <marker date="1558403892983" expanded="true" signature="576:721" ph="SELECT id,ap... apptest_appcasestep" />
+            <marker date="1558403892983" expanded="true" signature="576:727" ph="SELECT id,ap... apptest_appcasestep" />
+            <marker date="1558403892983" expanded="true" signature="576:737" ph="SELECT id,ap... apptest_appcasestep" />
+            <marker date="1558403892983" expanded="true" signature="2158:2267" ph="UPDATE apptest_appcasestep... " />
+            <marker date="1558403892983" expanded="true" signature="2158:2274" ph="UPDATE apptest_appcasestep... " />
+            <marker date="1558403892983" expanded="true" signature="2158:2303" ph="UPDATE apptest_appcasestep... " />
+            <marker date="1558403892983" expanded="true" signature="2760:2878" ph="UPDATE apptest_appcase... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webtest/webauto_testcase3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+            <marker date="1558404856534" expanded="true" signature="532:712" ph="SELECT id, w... webtest_webcasestep" />
+            <marker date="1558404856534" expanded="true" signature="1220:1399" ph="SELECT id, w... webtest_webcasestep" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autotest/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="e#469#475#1#HTML" expanded="true" />
+            <element signature="e#524#530#1#HTML" expanded="true" />
+            <element signature="e#579#585#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/proviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="133" column="8" lean-forward="true" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1558423706518" expanded="true" signature="3550:3615" ph="SELECT count... apitest_apis" />
+            <marker date="1558423706518" expanded="true" signature="3716:3781" ph="SELECT count... apitest_apis" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set/setviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bug/bugviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autotest/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptest/appviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webtest/webviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webtest/templates/webcasestep_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="88" column="11" lean-forward="false" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webtest/templates/webcase_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="57" column="82" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set/templates/set_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set/templates/set_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/templates/product_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="74" column="11" lean-forward="false" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bug/templates/bug_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="58" column="81" lean-forward="true" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptest/templates/appcasestep_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="96" column="11" lean-forward="false" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptest/templates/appcase_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="90" column="11" lean-forward="false" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/apistep_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/apitest_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/templates/apis_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
