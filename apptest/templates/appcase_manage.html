@@ -25,12 +25,14 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container"> <a class="navbar-brand" href="#">&nbsp;</a>
             <ul class="nav justify-content-center">
-                <li><a style='color:white' href="/appcase_manage/">app 测试用例</a></li>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <li class="active"><a style='color:white' href="/appcasestep_manage/">app 测试用例步骤</a></li>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="active"><a style='color:white' href="/apis_manage/">单一接口</a></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a style='color:white' href="/apitest_manage/">流程接口</a></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="active"><a style='color:white' href="/appcase_manage/">app 用例</a></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="active"><a style='color:white' href="/webcase_manage/">web 用例</a></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
             </ul>
 
             <ul class="nav justify-content-end">
@@ -74,6 +76,7 @@
                         <th>时间</th>
                         <th>编辑</th>
                         <th>删除</th>
+                        <th>查看</th>
                     </tr>
                 </thead>
                 <tbody> {% for appcase in appcases %} <tr>
@@ -85,7 +88,8 @@
                         <td>{{ appcase.create_time }}</td>
                         <td><a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Appcase" href="../admin/apptest/appcase/{{ appcase.id	}}/change/?_to_field=id&_popup=1"><img src="/static/admin/img/icon-changelink.svg"/></a></td>
                         <td><a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Appcase" href="../admin/apptest/appcase/{{ appcase.id	}}/delete/?_to_field=id&_popup=1"><img src="/static/admin/img/icon-deletelink.svg"/></a></td>
-                    </tr> {% endfor %}
+                        <td><a href="{% url "appcasestep_manage" %}?appcase.id={{ appcase.id	}} "><img src="/static/admin/img/icon-yes.svg"/></a></td>
+                </tr> {% endfor %}
                 </tbody>
             </table>
         </div>

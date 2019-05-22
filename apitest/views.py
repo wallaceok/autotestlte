@@ -57,7 +57,6 @@ def apitest_manage(request):
 	apitest_list = Apitest.objects.all()	#获取所有接口测试用例
 	username = request.session.get('user', '') # 读取浏览器登录 Session
 	apitest_count = Apitest.objects.all().count()
-
 	paginator = Paginator(apitest_list, 8)	#生成 paginator 对象，设置每页显示 8 条记录
 	page = request.GET.get('page',1)	#获取当前的页码数，默认为第 1 页
 	currentPage=int(page)	#把获取的当前页码数转换成整数类型
@@ -72,11 +71,18 @@ def apitest_manage(request):
 
 
 # 接口步骤管理
+# @login_required
+# def apistep_manage(request):
+# 	username = request.session.get('user', '')
+# 	apistep_list = Apistep.objects.all()
+# 	return render(request, "apistep_manage.html", {"user": username,"apisteps": apistep_list})
 @login_required
 def apistep_manage(request):
 	username = request.session.get('user', '')
 	apistep_list = Apistep.objects.all()
-	return render(request, "apistep_manage.html", {"user": username,"apisteps": apistep_list})
+	apitestid = request.GET.get('apitest.id', None)
+	apitest = Apitest.objects.get(id=apitestid)
+	return render(request, "apistep_manage.html", {"user": username,"apitest": apitest,"apisteps": apistep_list})
 
 
 # 单一接口管理
@@ -95,6 +101,11 @@ def apis_manage(request):
 	except EmptyPage:
 		apis_list = paginator.page(paginator.num_pages)  # 如果输入的页数不在系统的页数中，# 则显示最后一页内容
 	return render(request, "apis_manage.html", {"user": username, "apiss": apis_list,"apiscounts": apis_count})
+
+
+def welcome(request):
+	return render(request, "welcome.html")
+
 
 
 

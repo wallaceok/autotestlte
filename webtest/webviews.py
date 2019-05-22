@@ -31,6 +31,8 @@ def webcase_manage(request):
 def webcasestep_manage(request):
     username = request.session.get('user', '')
     webcasestep_list = Webcasestep.objects.all()
+    webcaseid = request.GET.get('webcase.id', None)
+    webcase = Webcase.objects.get(id=webcaseid)
     paginator = Paginator(webcasestep_list, 8)  # 生成paginator对象，设置每页8条记录
     page = request.GET.get('page', 1)  # 获取当前页的页码数，默认为第一页
     currentPage = int(page)
@@ -40,7 +42,7 @@ def webcasestep_manage(request):
         webcasestep_list = paginator.page(1)  # 如果输入的页数不是整数，则显示第1页的内容
     except EmptyPage:
         webcasestep_list = paginator.page(paginator.num_pages)  # 如果输入的页数不在系统的页数中，则显示最后一页
-    return render(request, "webcasestep_manage.html", {"user": username, "webcasesteps": webcasestep_list})
+    return render(request, "webcasestep_manage.html", {"user": username, "webcase": webcase,"webcasesteps": webcasestep_list})
 
 # 搜索功能
 @login_required

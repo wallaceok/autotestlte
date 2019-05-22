@@ -4,95 +4,105 @@
     {% load bootstrap4 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-    <title>test</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>autotestlte</title>
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../apistep_manage" target="mainFrame">AutoTestlte</a>
-        </div>
+        <a style='color:white' href="../welcome" target="mainFrame">自动化测试平台</a>
     </nav>
-    <table border="0">
+    <!-- <table border="0">glyphicon glyphicon-credit-card-->
+    <div class="container-fluid">
+        <tr>
+            <td>
+                <li>
+                    <a href="../product_manage" target="mainFrame" style="font-size:18px">
+                       <!-- <i class="glyphicon glyphicon-gift"></i>-->
+                         <i class=" glyphicon glyphicon-home"></i>
+
+                        产品中心
+                    </a>
+                </li>
+        </tr>
+        </td>
+        <tr>
+            <td>
+               <li>
+                    <a href="#caseManage" target="mainFrame"  data-toggle="collapse" data-parent="#caseManage"  style="font-size:18px">
+                            <i class="glyphicon glyphicon-list"></i>
+                            用例管理
+                    </a>
+                    <ul id="caseManage" class="nav nav-list collapse secondmenu" style="height:100px;">
+                        <li><a href="../apis_manage" target="mainFrame">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-list"></i>测试用例-api</a></li>
+                        <li><a href="../appcase_manage" target="mainFrame">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-list"></i>测试用例-app</a></li>
+                        <li><a href="../webcase_manage" target="mainFrame">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-list"></i>测试用例-web</a></li>
+                    </ul>
+                </li>
+            </td>
+        </tr>
+
         <tr>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td>
+                <li>
+                    <a href="../periodic_task" target="mainFrame" style="font-size:18px">
+                        <i class="glyphicon glyphicon-time"></i>
+                        定时任务
+                    </a>
+                </li>
         </tr>
+        </td>
         <tr>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td>
+                <li>
+                    <a href="../bug_manage" target="mainFrame" style="font-size:18px">
+                        <i class="glyphicon glyphicon-eye-open"></i>
+                        bug 管理
+                    </a>
+                </li>
         </tr>
-        <tr>
-            <td><a href="../product_manage" target="mainFrame">&nbsp;&nbsp;产品管理</a></td>
-        </tr>
-        <tr>
-            <td>------------------------------------</a></td>
-        </tr>
-        <tr>
-            <td><a href="../apitest_manage" target="mainFrame">&nbsp;&nbsp;用例管理</a></td>
-        </tr>
-
-        <tr>
-            <td><a href="../apitest_manage" target="mainFrame">&nbsp;&nbsp;流程接口测试用例</a></td>
-        </tr>
-        <tr>
-            <td><a href="../apis_manage" target="mainFrame">&nbsp;&nbsp;单一接口测试用例</a></td>
-        </tr>
-
-        <tr>
-            <td>------------------------------------</a></td>
-        </tr>
-        <tr>
-            <td><a href="../appcase_manage" target="mainFrame">&nbsp;&nbsp;app 用例管理</a></td>
-        </tr>
-
-        <tr>
-            <td><a href="../appcasestep_manage" target="mainFrame">&nbsp;&nbsp;app 用例测试步骤</a></td>
-        </tr>
-
-        <tr>
-            <td>------------------------------------</a></td>
-        </tr>
-
-        <tr>
-            <td><a href="../webcase_manage" target="mainFrame">&nbsp;&nbsp;web 用例管理</a></td>
-        </tr>
-        <tr>
-            <td><a href="../webcasestep_manage" target="mainFrame">&nbsp;&nbsp;web用例测试步骤</a></td>
-        </tr>
+        </td>
         <tr>
             <td>&nbsp;</td>
         </tr>
-            <td>------------------------------------</a></td>
+        <tr>
+            <td>
+                <li>
+                    <a href="../test_report" target="mainFrame" style="font-size:18px">
+                        <i class="glyphicon glyphicon-record"></i>
+                        测试报告
+                    </a>
+                </li>
+        </tr>
+        </td>
+        <tr>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td><a href="../bug_manage" target="mainFrame">&nbsp;&nbsp;Bug管理</a></td>
+            <td>
+                <li>
+                    <a href="../set_manage" target="mainFrame" style="font-size:18px">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        系统设置
+                    </a>
+                </li>
         </tr>
-
+        </td>
         <tr>
-            <td>------------------------------------</a></td>
+            <td>&nbsp;</td>
         </tr>
-
-        <tr>
-            <td><a href="http://127.0.0.1:8000/admin/apitest/apitest/add/" target="mainFrame">&nbsp;&nbsp;任务管理</a></td>
-        </tr>
-        <tr>
-            <td><a href="../set_manage" target="mainFrame">&nbsp;&nbsp;系统设置</a></td>
-        </tr>
-        <tr>
-            <td><a href="../user" target="mainFrame">&nbsp;&nbsp;用户管理</a></td>
-        </tr>
-        <tr>
-            <td>------------------------------------</a></td>
-        </tr>
-        <tr>
-            <td><a href="http://127.0.0.1:8000/admin/apitest/apitest/add/" target="mainFrame">&nbsp;&nbsp;测试报告</a></td>
-        </tr>
-    </table>
+    </div>
+    <!--</table>-->
 </body>
 
 </html>

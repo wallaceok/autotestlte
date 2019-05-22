@@ -18,3 +18,5 @@ class ApisAdmin(admin.TabularInline):
 
 #admin.site.register(Apitest,ApitestAdmin)    #流程场景接口
 admin.site.register(Apis)   #单一场景接口
+admin.site.site_title = 'Autotestlte'
+admin.site.site_header = 'Atotestlte'

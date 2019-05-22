@@ -31,6 +31,8 @@ def appcase_manage(request):
 def appcasestep_manage(request):
     username = request.session.get('user','') #读取浏览器登录Session
     appcasestep_list = Appcasestep.objects.all()
+    appcaseid = request.GET.get('appcase.id', None)
+    appcase = Appcase.objects.get(id=appcaseid)
     paginator = Paginator(appcasestep_list, 8)  # 生成 paginator 对象,设置每页显示 8 条记# 录
     page = request.GET.get('page', 1)  # 获取当前的页码数,默认为第 1 页
     currentPage = int(page)  # 把获取的当前页码数转换成整数类型
@@ -40,7 +42,7 @@ def appcasestep_manage(request):
         appcasestep_list = paginator.page(1)  # 如果输入的页数不是整数则显示第 1 页的内容
     except EmptyPage:
         appcasestep_list = paginator.page(paginator.num_pages)  # 如果输入的页数不在系统# 的页数中则显示最后一页
-    return render(request, "appcasestep_manage.html", {"user": username, "appcasesteps": appcasestep_list})
+    return render(request, "appcasestep_manage.html", {"user": username, "appcase": appcase,"appcasesteps": appcasestep_list})
 
 
 # App测试报告

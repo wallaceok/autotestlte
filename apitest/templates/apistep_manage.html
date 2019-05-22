@@ -5,40 +5,57 @@
     {% bootstrap_css %}
     {% bootstrap_javascript %}
     <title>产品自动化测试平台</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css" />
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+    <script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum- scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css" />
+    <meta name="robots" content="NONE,NOARCHIVE" />
+    <style> body{text-align:center} </style>
+
 </head>
 
 <body role="document">
-    <!-- 导航栏-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-
-        <div class="container">
-            <a class="navbar-brand" href="#">&nbsp;</a>
-            <ul class="nav justify-content-center">
-                <li><a style='color:white' href="/apitest_manage/">流程接口测试用例</a></li>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <li class="active"><a style='color:white' href="/apistep_manage/">流程接口测试步骤</a></li>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <li class="active"><a style='color:white' href="/apis_manage/">单一接口测试用例</a></li>
-            </ul>
-            <ul class="nav justify-content-end">
-                <li class="nav-link"><a style='color:white' href="#">{{user}}</a></li>
-                <li class="nav-link"><a style='color:white' href="/logout/">退出</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- 搜索栏-->
-    <div class="page-header" style="padding-top: 70px;">
-        <form class="navbar-form" method="get" action="/apistepsearch/">
-            {% csrf_token %}
-            <input type="search" name="apiname" placeholder="名称" required>
-            <button type="submit">搜索</button>
-        </form>
-    </div>
+      <!-- 导航栏-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">&nbsp;</a>
+                <ul class="nav justify-content-center">
+                    <li class="active"><a style='color:white' href="/apis_manage/">单一接口</a></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a style='color:white' href="/apitest_manage/">流程接口</a></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="active"><a style='color:white' href="/appcase_manage/">app 用例</a></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="active"><a style='color:white' href="/webcase_manage/">web 用例</a></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </ul>
+                <ul class="nav justify-content-end">
+                    <li class="nav-link"><a style='color:white' href="#">{{user}}</a></li>
+                    <li class="nav-link"><a style='color:white' href="/logout/">退出</a></li>
+                </ul>
+            </div>
+        </nav>
     <!-- 流程接口测试步骤-->
-    <div class="row" style="padding-top: 70px;">
+    <div class="row">
+        <!-- 搜索栏-->
+        <div class="page-header" >
+            <form class="navbar-form" method="get" action="/apistepsearch/">
+                {% csrf_token %}
+                <input type="search" name="apiname" placeholder="名称" required>
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+
         <div class="col-md-11">
             <table class="table table-striped">
                 <thead>
@@ -58,20 +75,39 @@
                 <tbody>
                     {% for apistep in apisteps %}
                     <tr>
-                        <td>{{ apistep.id }}</td>
-                        <td>{{ apistep.apiname }}</td>
+                        {% if apistep.Apitest.id == apitest.id %}
+                        <td>{{ apistep.Apitest.Product.productname }}</td>
+                        <td>case_{{ apistep.Apitest.id }}_{{ apistep.Apitest.apitestname }}</td>
+                        <td>{{ apistep.apistep }}:{{ apistep.apiname }}</td>
                         <td>{{ apistep.apiurl }}</td>
                         <td>{{ apistep.apiparamvalue }}</td>
                         <td>{{ apistep.apimethod }}</td>
                         <td>{{ apistep.apiresult }}</td>
-                        <td>{{ apistep.apistatus }}</td>
+                        <td>{% if apistep.apistatus == 1 %}
+                            <a style='color:green'>{{ apistep.apistatus }}</a>
+                            {% else %}
+                            <a style='color:red'>{{ apistep.apistatus }}</a>
+                            {% endif %}
+                        </td>
                         <td>{{ apistep.create_time }}</td>
+                        {% else %}
+                        {% endif %}
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
         </div>
     </div>
+
+        <td>
+        <a style='color:light blue' href="../apitest_manage/">
+            <img src="/static/admin/img/icon-yes.svg" alt="返回" />返回
+        </a>
+        </td>
+        <td>
+            <a style='color:light blue' class="related-widget-wrapper-link add-related" id="add_id_Apitest" href="../admin/apitest/apitest/{{ apitest.id	}}/change/?_to_field=id&_popup=1">
+                <img src="/static/admin/img/icon-changelink.svg" />编辑</a>
+        </td>
 
 <span style="position:absolute; right:100px; bottom:30px;"> {# 把翻页功能固定显示在右下角#}
     <div class="container">
@@ -103,6 +139,9 @@
         </ul>
     </div>
 </span>
+
+
+
 </body>
 
 </html>
